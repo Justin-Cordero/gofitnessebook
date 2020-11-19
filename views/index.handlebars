@@ -1,0 +1,130 @@
+{{!-- Warning --}}
+<script>
+    alert("WARNING: THIS IS NOT A REAL PRODUCT. DO NOT ENTER REAL CREDIT CARD INFORMATION. " +
+    "This is only a project. \nEnter: 4242 4242 4242 4242 to simulate a real credit card");
+</script>
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+        <h1><a href="/">Go Fitness</a></h1>
+        <nav id="nav">
+            <ul>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="https://github.com/Justin-Cordero/gofitnessebook">Get the Code</a></li>
+                            <li><a href="https://justincordero.tech">Back to Portfolio</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <img src="/img/book-cover.png" class="book">
+            <h2>Go Fitness eBook</h2>
+            <p>Change Your Life</p>
+            <ul class="actions special">
+                <li>
+                    <form action="/charge" method="POST">
+                        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                            data-key="{{stripePublishableKey}}"
+                            data-amount="1999" data-name="GO Fitness eBook" data-description="eBook"
+                            data-image="/img/logo.png" data-locale="auto">
+                        </script>
+                        <script>
+                            //Hide Default Stripe Button
+                            document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                        </script>
+                        <button type="submit" class="btn-sell   ">Buy Now!</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+        <a href="#one" class="more scrolly">Learn More</a>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style1 special">
+        <div class="inner">
+            <header class="major">
+                <h2>Everything you need<br />
+                    to have the body you've always dreamed of  </h2>
+                <p>This eBook will take you step by step to achieving your ideal body with a simple-to-follow actionable plan. Look and feel your best while having fun.</p>
+            </header>
+        </div>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper alt style2">
+        <section class="spotlight">
+            <div class="image"><img src="/img/testimonial1.jpg" /></div>
+            <div class="content">
+                <h2>"This eBook was the<br />
+                    missing factor to my health and happiness"</h2>
+                <p>- Michael T.</p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <div class="image"><img src="/img/testimonial2.jpg" alt="" /></div>
+            <div class="content">
+                <h2>"I'm in the best shape of my life,<br />
+                    Thanks Go Fitness!"</h2>
+                <p>- Alicia P.</p>
+            </div>
+        </section>
+        <section class="spotlight">
+            <div class="image"><img src="/img/testimonial3.jpg" alt="" /></div>
+            <div class="content">
+                <h2>"I look and feel better than I have<br />
+                    in over a decade!"</h2>
+                <p>- Jodie B.</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="wrapper style4">
+        <div class="inner">
+            <header>
+                <h2>What are you waiting for?</h2>
+                <p>The time for excuses is over. Click the button now and get ready for your new life!</p>
+            </header>
+            <ul class="actions stacked">
+                <li><form action="/charge" method="POST">
+                        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                            data-key="{{stripePublishableKey}}"
+                            data-amount="1999" data-name="GO Fitness eBook" data-description="eBook"
+                            data-image="/img/logo.png" data-locale="auto">
+                        </script>
+                        <script>
+                            //Hide Default Stripe Button
+                            document.getElementsByClassName('stripe-button-el')[1].style.display = 'none';
+                        </script>
+                        <button type="submit" class="btn-sell   ">Buy Now!</button>
+                    </form></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a href="https://github.com/Justin-Cordero" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="https://justincordero.medium.com/" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+            <li><a href="https://www.linkedin.com/in/justin-cordero-tech/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>Justin Cordero 2020&copy;</li>
+            <li><a href="https://justincordero.tech">Back to Portfolio</a></li>
+        </ul>
+    </footer>
+
+</div>
